@@ -29,7 +29,7 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="font-display text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight"
                     >
-                        نقاء الطبيعة..
+                        نقاء الطبيعة
                         <br />
                         <span className="italic text-cream">لإشراقة تفيض بالحياة</span>
                     </motion.h1>
@@ -40,9 +40,9 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="text-base md:text-lg text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed font-body"
                     >
-                        اكتشفي قوة المكونات العضوية المستخلصة من قلب الطبيعة.
+                        اكتشفي قوة المكونات العضوية المستخلصة من قلب الطبيعة
                         <br />
-                        عناية فائقة بالصحة والجمال، صُممت خصيصاً لتعيد لكِ توازنكِ الطبيعي.
+                        عناية فائقة بالصحة والجمال، صُممت خصيصاً لتعيد لكِ توازنكِ الطبيعي
                     </motion.p>
 
                     <motion.div
