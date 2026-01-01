@@ -96,8 +96,8 @@ export default function Header() {
                             <Link
                                 href="/ingredients"
                                 className={`text-sm font-medium transition-colors ${isWhiteHeader
-                                        ? 'text-white hover:text-white/80'
-                                        : 'text-charcoal hover:text-primary'
+                                    ? 'text-white hover:text-white/80'
+                                    : 'text-charcoal hover:text-primary'
                                     }`}
                             >
                                 المكونات
@@ -216,53 +216,6 @@ export default function Header() {
                                 </Link>
                             ))}
                         </nav>
-
-                        {/* Contact Info */}
-                        <div className="p-6 border-t border-primary/10 space-y-5 bg-primary/5">
-                            <h3 className="text-charcoal/60 text-xs font-bold mb-4 uppercase tracking-widest">تواصل معنا</h3>
-
-                            <a
-                                href="tel:+212123456789"
-                                className="flex items-center gap-3 text-charcoal hover:text-primary transition-colors group"
-                            >
-                                <div className="p-2 bg-cream rounded-full group-hover:bg-primary/10 transition-all duration-300">
-                                    <Phone className="w-4 h-4" />
-                                </div>
-                                <span className="text-sm font-medium" dir="ltr">+212 123 456 789</span>
-                            </a>
-
-                            <a
-                                href="mailto:contact@shcosmetics.ma"
-                                className="flex items-center gap-3 text-charcoal hover:text-primary transition-colors group"
-                            >
-                                <div className="p-2 bg-cream rounded-full group-hover:bg-primary/10 transition-all duration-300">
-                                    <Mail className="w-4 h-4" />
-                                </div>
-                                <span className="text-sm font-medium">contact@shcosmetics.ma</span>
-                            </a>
-
-                            {/* Social Links */}
-                            <div className="flex gap-3 pt-2">
-                                <a
-                                    href="https://instagram.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="p-2.5 bg-cream rounded-full hover:bg-primary hover:text-white text-charcoal transition-all duration-300 hover:scale-110 active:scale-95"
-                                    aria-label="Instagram"
-                                >
-                                    <Instagram className="w-4 h-4" />
-                                </a>
-                                <a
-                                    href="https://facebook.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="p-2.5 bg-cream rounded-full hover:bg-primary hover:text-white text-charcoal transition-all duration-300 hover:scale-110 active:scale-95"
-                                    aria-label="Facebook"
-                                >
-                                    <Facebook className="w-4 h-4" />
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </>
