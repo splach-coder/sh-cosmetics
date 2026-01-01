@@ -6,23 +6,16 @@ export default function AboutPage() {
     return (
         <main className="min-h-screen bg-cream" dir="rtl">
 
-            {/* Simple Hero Banner */}
-            <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center">
-                <div className="absolute inset-0">
-                    <Image
-                        src="/images/banner-infos.jpeg"
-                        alt="Natural botanical ingredients"
-                        fill
-                        className="object-cover"
-                        priority
-                    />
-                    <div className="absolute inset-0 bg-charcoal/40"></div>
-                </div>
-                <div className="relative z-10 text-center px-6 text-white">
-                    <h1 className="font-display text-4xl md:text-5xl lg:text-6xl mb-4">
+            {/* Hero Section */}
+            <section className="relative h-[40vh] md:h-[50vh] flex items-center justify-center bg-primary/10">
+                <div className="text-center px-6">
+                    <span className="text-xs uppercase tracking-[0.3em] text-primary block mb-3">
+                        قصتنا
+                    </span>
+                    <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-charcoal mb-4">
                         من الأرض.. إليكِ مباشرة
                     </h1>
-                    <div className="w-16 h-px bg-white/50 mx-auto"></div>
+                    <div className="w-16 h-px bg-primary mx-auto"></div>
                 </div>
             </section>
 

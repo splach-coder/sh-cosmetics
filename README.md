@@ -1,78 +1,137 @@
-# Tourism Website Boilerplate
+# SH Cosmetiques - E-Commerce Website
 
-A modern, high-performance, client-side tourism website boilerplates built with **Next.js**, **React**, **TailwindCSS**, and **TypeScript**.
+A modern, premium e-commerce website for **SH Cosmetiques**, a Moroccan brand specializing in natural, organic health foods and cosmetic products. Built with **Next.js**, **React**, **TailwindCSS**, and **TypeScript**.
 
-## 📂 Folder Philosophy
+## 🌿 About SH Cosmetiques
 
-This project is structured for clarity and ease of duplication.
+SH Cosmetiques offers premium, 100% natural and organic products including:
+- **Moringa Powder** - A superfood packed with nutrients for health and vitality
+- **Stevia Powder** - A natural, zero-calorie sugar alternative
 
-### 1. `src/data` (The Single Source of Truth)
-- **`siteData.ts`**: All dynamic content resides here. To create a new website for a different client:
-  - Update `company` details (Name, contact, social).
-  - Populate `tours`, `excursions`, `activities`, and `services`.
-  - The rest of the site will automatically update to reflect these changes.
+All products are carefully selected to support a healthy lifestyle, free from artificial additives and chemicals.
 
-### 2. `src/app/[locale]` (Routes & Pages)
-- **`page.tsx`**: The Homepage. Fetches data from `siteData` and displays featured items.
-- **`tours/`**:
-  - `page.tsx`: Listing page for tours.
-  - `[id]/page.tsx`: Dynamic detail page for a single tour.
-- **`excursions/` & `activities/`**: Follow the same pattern as `tours/`.
-- **`layout.tsx`**: Global layout (Header, Footer, Fonts).
+## 📂 Project Structure
 
-### 3. `src/components` (Reusable UI)
-- **`common`**: Shared components like `Header`, `Footer`, `Hero`.
-- **`ui`**: Small atomic components (Buttons, Inputs).
-- **Page-Specific Components**: Components used only on specific pages (e.g., `TourCard`, `GallerySlider`).
+### 1. `src/data` (Product Catalog)
+- **`products.ts`**: Contains all product information including:
+  - Product names, descriptions, and pricing
+  - Benefits and usage instructions
+  - Images and categories
+  - Tags (e.g., "الأكثر مبيعاً", "جديد")
+
+### 2. `src/app/[locale]` (Pages & Routes)
+- **`page.tsx`**: Homepage with Hero, Philosophy, Best Sellers, Testimonials, and Newsletter sections
+- **`shop/`**: Product listing page
+- **`products/[id]/`**: Individual product detail pages
+- **`about/`**: About the brand
+- **`contact/`**: Contact page with Google Maps integration
+- **`checkout/`**: Shopping cart and checkout flow
+- **`layout.tsx`**: Global layout with Header, Footer, and multilingual support
+
+### 3. `src/components` (UI Components)
+- **`home/`**: Homepage-specific components (Hero, Philosophy, BestSellers, Testimonials, Newsletter)
+- **`Header.tsx`**: Navigation with cart drawer and language switcher
+- **`Footer.tsx`**: Footer with company information
+- **`CartDrawer.tsx`**: Shopping cart functionality
+- **Reusable UI components**: Buttons, cards, forms, etc.
 
 ### 4. `messages/` (Internationalization)
-- `en.json`: English translations.
-- `fr.json`: French translations.
-- Add more locales by adding a file and updating `next.config.ts`.
+- Multilingual support for Arabic, French, and English
+- Translations for all UI elements and content
 
 ---
 
-## 🚀 How to Start a New Project
+## 🚀 Getting Started
 
-1. **Clone & Install**:
-   ```bash
-   git clone <repo-url> new-project
-   cd new-project
-   npm install
-   ```
+### Installation
+```bash
+# Clone the repository
+git clone <repo-url> shcosmetics
+cd shcosmetics
 
-2. **Update Data**:
-   - Open `src/data/siteData.ts`.
-   - Clear the sample data.
-   - Add your client's real data (Tours, Images, Descriptions).
+# Install dependencies
+npm install
+```
 
-3. **Update Images**:
-   - Place generic images in `public/images`.
-   - Update references in `siteData.ts`.
+### Development
+```bash
+# Run the development server
+npm run dev
+```
 
-4. **Customize Colors**:
-   - Open `src/app/globals.css` (or `tailwind.config.ts`) to change primary colors (e.g., `--color-primary`).
+Visit [http://localhost:3000](http://localhost:3000) to view the website.
 
-5. **Run Locally**:
-   ```bash
-   npm run dev
-   ```
+### Build for Production
+```bash
+# Create an optimized production build
+npm run build
+
+# Start the production server
+npm start
+```
+
+---
 
 ## 🛠 Tech Stack
 
-- **Framework**: Next.js 15 (App Router)
-- **Styling**: TailwindCSS
+- **Framework**: Next.js 15 (App Router) with React 19
+- **Language**: TypeScript
+- **Styling**: TailwindCSS 4
 - **Animations**: Framer Motion
 - **Carousel**: Swiper.js
 - **Icons**: Lucide React
-- **i18n**: next-intl
+- **Internationalization**: next-intl
+- **Fonts**: Cormorant Garamond
+- **Gestures**: @use-gesture/react
 
-## 📝 Key Features
+## ✨ Key Features
 
-- **Fully Client-Side**: No database required. Fast and cheap to host (Vercel/Netlify).
-- **SEO Optimized**: Metadata is dynamically generated from `siteData`.
-- **Responsive**: Mobile-first design.
-- **Multi-language Support**: Built-in generic structure for multilingual content.
+- **Premium Design**: Modern, visually stunning interface with smooth animations and micro-interactions
+- **Fully Responsive**: Mobile-first design optimized for all devices
+- **Multi-language Support**: Arabic (primary), French, and English
+- **Shopping Cart**: Full e-commerce functionality with cart drawer
+- **SEO Optimized**: Proper meta tags, semantic HTML, and performance optimization
+- **Scroll Animations**: Framer Motion animations triggered on scroll for engaging user experience
+- **Contact Integration**: Google Maps integration for location display
+- **Newsletter Signup**: Email collection for marketing campaigns
+- **Client-Side Rendering**: Fast, dynamic content without backend dependencies
+
+## 📝 Adding New Products
+
+To add new products to the catalog:
+
+1. Open `src/data/products.ts`
+2. Add a new product object with the following structure:
+```typescript
+{
+  id: number,
+  name: string,
+  title: string,
+  description: string,
+  fullDescription: string,
+  price: string,
+  priceNumeric: number,
+  image: string,
+  category: string,
+  tag: string,
+  benefits: string[],
+  usage: string
+}
+```
+3. Add product images to `public/images/`
+4. The product will automatically appear on the shop page and be available for purchase
 
 ---
-*Created for efficient tourism website development.*
+
+## 🎨 Design Philosophy
+
+This website prioritizes:
+- **Visual Excellence**: Rich aesthetics with vibrant colors, smooth gradients, and premium typography
+- **User Experience**: Intuitive navigation, smooth transitions, and engaging interactions
+- **Performance**: Optimized images, lazy loading, and efficient code
+- **Accessibility**: Semantic HTML and proper ARIA labels
+- **Brand Identity**: Reflects the natural, organic essence of SH Cosmetiques products
+
+---
+
+*Built with ❤️ for SH Cosmetiques - Natural Beauty, Natural Health*

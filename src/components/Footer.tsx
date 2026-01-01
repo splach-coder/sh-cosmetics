@@ -37,7 +37,6 @@ export default function Footer() {
                         <h4 className="font-display text-lg mb-6 text-white">الشركة</h4>
                         <ul className="space-y-3 text-sm text-gray-400">
                             <li><Link href="/about" className="hover:text-primary transition-colors">قصتنا</Link></li>
-                            <li><Link href="/sustainability" className="hover:text-primary transition-colors">الاستدامة</Link></li>
                             <li><Link href="/ingredients" className="hover:text-primary transition-colors">المكونات</Link></li>
                             <li><Link href="/contact" className="hover:text-primary transition-colors">تواصل معنا</Link></li>
                         </ul>

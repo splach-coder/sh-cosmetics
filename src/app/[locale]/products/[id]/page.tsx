@@ -33,7 +33,7 @@ export default function ProductPage({
         <main className="min-h-screen bg-cream" dir="rtl">
 
             {/* Breadcrumb */}
-            <nav className="container mx-auto px-6 pt-8 pb-4 text-sm text-gray-500 font-body">
+            <nav className="container mx-auto px-6 pt-28 pb-4 text-sm text-gray-500 font-body">
                 <Link href="/" className="hover:text-primary transition-colors">الرئيسية</Link>
                 <span className="mx-2">/</span>
                 <Link href="/shop" className="hover:text-primary transition-colors">المتجر</Link>

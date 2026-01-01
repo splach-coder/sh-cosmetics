@@ -29,31 +29,20 @@ export default function ShopPage() {
         <main className="min-h-screen bg-cream" dir="rtl">
 
             {/* Hero Section */}
-            <section className="relative h-[40vh] md:h-[50vh] flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0">
-                    <Image
-                        src="/images/banner.jpeg"
-                        alt="Shop"
-                        fill
-                        className="object-cover"
-                        priority
-                    />
-                    <div className="absolute inset-0 bg-charcoal/50"></div>
-                </div>
-
-                <div className="relative z-10 text-center px-6 text-white">
+            <section className="relative h-[40vh] md:h-[50vh] flex items-center justify-center bg-primary/10">
+                <div className="text-center px-6">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                        <span className="text-xs uppercase tracking-[0.3em] block mb-3 text-white/80">
+                        <span className="text-xs uppercase tracking-[0.3em] text-primary block mb-3">
                             اكتشفي
                         </span>
-                        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl mb-4">
+                        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-charcoal mb-4">
                             منتجاتنا العضوية
                         </h1>
-                        <div className="w-16 h-px bg-white/50 mx-auto"></div>
+                        <div className="w-16 h-px bg-primary mx-auto"></div>
                     </motion.div>
                 </div>
             </section>

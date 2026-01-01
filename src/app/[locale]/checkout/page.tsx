@@ -31,7 +31,7 @@ export default function Checkout() {
 
     if (cart.length === 0) {
         return (
-            <main className="min-h-screen bg-cream py-24" dir="rtl">
+            <main className="min-h-screen bg-cream pt-28 pb-24" dir="rtl">
                 <div className="container mx-auto px-6 text-center">
                     <h1 className="font-display text-4xl mb-4">السلة فارغة</h1>
                     <p className="text-gray-600 mb-8">لم تقومي بإضافة أي منتجات بعد</p>
@@ -44,7 +44,7 @@ export default function Checkout() {
     }
 
     return (
-        <main className="min-h-screen bg-cream py-6 md:py-12" dir="rtl">
+        <main className="min-h-screen bg-cream pt-28 pb-12" dir="rtl">
 
             {/* Header Banner */}
             <div className="bg-primary text-white text-center py-2 px-4 text-xs md:text-sm font-medium tracking-wide mb-6 md:mb-8">
