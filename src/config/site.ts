@@ -1,13 +1,22 @@
 export const siteConfig = {
-    name: 'Boilerplate App',
-    description: 'Clean boilerplate ready for your content.',
+    name: 'SH Cosmetiques',
+    description: 'منتجات صحية عضوية نقية مستمدة من الطبيعة - مورينجا، ستيفيا، ومنتجات طبيعية 100% للصحة والجمال',
     url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
+    defaultLocale: 'ar',
+    locales: ['ar', 'fr', 'en'],
     // SEO specifics
-    ogImage: '/images/og-image.jpg', // You should create a default og-image in public/images
-    twitterHandle: '@yourhandle',
-    creator: 'Your Name or Agency',
+    ogImage: '/images/og-image.jpg',
+    twitterHandle: '@shcosmetics',
+    instagramHandle: '@shcosmetics',
+    facebookHandle: 'shcosmetics',
+    creator: 'SH Cosmetiques',
+    email: 'hello@shcosmetiques.ma',
+    phone: '+212 6XX XXX XXX',
+    address: '123 شارع النخيل، مراكش، المغرب',
+    // Business info
+    tagline: 'نقاء الطبيعة لإشراقة تفيض بالحياة',
+    keywords: ['مورينجا', 'ستيفيا', 'منتجات عضوية', 'صحة طبيعية', 'سوبر فود', 'المغرب', 'عناية طبيعية'],
 };
 
 export type SiteConfig = typeof siteConfig;
+
